@@ -1,3 +1,12 @@
-<h1>Admin:Dashboard</h1>
-<p>Total product count:<%= @products%></p>
-<p>Total categories: <%= @categories%></p>
+<h1 lass="jumbotron">Admin: Dashboard</h1>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Total product count:
+    <span class="badge badge-primary badge-pill"><%= @products%></span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Total categories:
+    <span class="badge badge-primary badge-pill"><%= @categories%></span>
+  </li> 
+</ul>
