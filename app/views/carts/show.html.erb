@@ -5,6 +5,7 @@
   </header>
 
   <div class="panel panel-default items">
+ 
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -14,7 +15,12 @@
           <th>Price</th>
         </tr>
       </thead>
+      
       <tbody>
+        <% if enhanced_cart.length == 0 %>   
+          <h3>Your cart is empty</h3>
+          <a href= '/'>back to shopping</a>
+        <%end%>
         <% enhanced_cart.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
@@ -31,7 +37,7 @@
       </tfoot>
     </table>
   </div>
-
+<% unless enhanced_cart.empty? %>
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -48,5 +54,6 @@
       <% end %>
     </div>
   </div>
+  <% end %>
 
 </section>
