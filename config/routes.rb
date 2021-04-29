@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
+  resources :login, only: [:new, :create]
+  resources :logout, only: [:destroy]
+
   resources :users, only: [:create]
   resources :signup, only:[:new]
   
