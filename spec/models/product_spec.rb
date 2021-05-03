@@ -30,9 +30,8 @@ RSpec.describe Product, type: :model do
       @category.products = [@product]
       @product.save
       expect(@product).to_not be_valid
-      expect(@product.errors.full_messages.length).to eql(1)
       expect(@product.errors.full_messages[0]).to eql("Name can't be blank")
-      puts @product.errors.full_messages
+   
     end   
 
     it 'should have a price' do
@@ -68,7 +67,7 @@ RSpec.describe Product, type: :model do
       
       expect(@product).to_not be_valid
       expect(@product.errors.full_messages[0]).to eql("Quantity can't be blank")
-      puts @product.errors.full_messages
+      
     end   
 
     it 'should have a category' do
@@ -81,7 +80,7 @@ RSpec.describe Product, type: :model do
       @product.save
       expect(@product).to_not be_valid
       expect(@product.errors.full_messages[0]).to eql("Category can't be blank")
-      puts @product.errors.full_messages
+      
     end   
   end
 end
