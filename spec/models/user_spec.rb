@@ -57,7 +57,7 @@ RSpec.describe User, type: :model do
         email: 'bob@email.com',
         password: 'test',
         password_confirmation:'test')
-      @user2 = User.create(id: 1,
+      @user2 = User.create(id: 2,
         name: 'Bob', 
         email: 'BOB@email.com',
         password: 'test',
@@ -66,4 +66,17 @@ RSpec.describe User, type: :model do
       puts @user.errors.full_messages      
     end
   end
+  
+  describe '.authenticate_with_credentials' do
+    it "should authenticate if email is given in different case and has white space " do
+      @user = User.create(id: 1,
+        name: 'Bob', 
+        email: 'bob@email.com',
+        password: 'test',
+        password_confirmation:'test')
+      @authenticated = User.authenticate_with_credentials('  BOb@eMAil.com', 'test')
+      expect(@user).to eql(@authenticated)
+    end
+  end
 end
+
