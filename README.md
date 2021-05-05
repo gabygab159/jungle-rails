@@ -36,7 +36,14 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
+### Homescreen
+
 !["Homescreen"](https://github.com/gabygab159/jungle-rails/blob/master/docs/jungle_screenshot_home.png?raw=true)
+
+### Cart
+
 !["Cart"](https://github.com/gabygab159/jungle-rails/blob/master/docs/jungle_screenshot_cart.png?raw=true)
+
+### Checkout
+
 !["Checkout"](https://github.com/gabygab159/jungle-rails/blob/master/docs/jungle_screenshot_payment.png?raw=true)
-!["Soldout"](https://github.com/gabygab159/jungle-rails/blob/master/docs/jungle_screenshot_soldout.png?raw=true)
