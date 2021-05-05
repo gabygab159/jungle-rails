@@ -2,6 +2,8 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+This is our first application built with ruby on rails. It was fun to use a language we barely know to build an application.
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
@@ -31,3 +33,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
 - Stripe
+
+## Screenshots
